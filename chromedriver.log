@@ -1,0 +1,7 @@
+[1204/171913:INFO:chromedriver_server.cc(76)] Handling request: /status 
+[1204/171913:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"","status":0,"value":{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Windows NT","version":"6.1 SP1"}}}
+[1204/171913:INFO:chromedriver_server.cc(76)] Handling request: /session {"desiredCapabilities":{"platform":"ANY","browserName":"chrome","chromeOptions":{"args":[],"extensions":[]},"version":"","chrome.switches":[]}}
+[1204/171913:INFO:chrome_launcher.cc(74)] Using chrome from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[1204/171934:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"","status":13,"value":{"message":"unknown error: unable to discover open pages\n  (Driver info: chromedriver=0.7,platform=Windows NT 6.1 SP1 x86_64)"}}
+[1204/171934:INFO:chromedriver_server.cc(76)] Handling request: /shutdown 
+[1204/171934:INFO:chromedriver_server.cc(81)] Done handling request: 200 {"sessionId":"","status":0,"value":null}

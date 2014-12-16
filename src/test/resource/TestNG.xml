@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="seleniumTests">
+	<parameter name="webSite" value="https://test-wmos1.test.liquidation.com:10501/" />
+	<parameter name="url1" value="https://test-wmos1.test.liquidation.com:10501/RFLogin/ui/rflogin.jsp"/>
+	<parameter name="browser" value="*chrome" />
+	<parameter name="seleniumPort" value="5555" />
+	<!--  <parameter name="seleniumHost" value="localhost" />-->
+	<test name="functionalTests" preserve-order="true">
+		<classes>
+ 	<class name="testcases.inboundflow" /> 
+     	 
+	 	</classes>
+	</test>
+</suite>

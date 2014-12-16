@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" configfailurepolicy="skip" verbose="0" name="Failed suite [seleniumTests]" skipfailedinvocationcounts="false" parallel="false" annotations="JDK" data-provider-thread-count="10">
+  <parameter name="url1" value="https://test-wmos1.test.liquidation.com:10501/RFLogin/ui/rflogin.jsp"/>
+  <parameter name="webSite" value="https://test-wmos1.test.liquidation.com:10501/"/>
+  <parameter name="browser" value="*chrome"/>
+  <parameter name="seleniumPort" value="5555"/>
+  <test verbose="1" name="functionalTests(failed)" junit="false" parallel="false" annotations="JDK">
+    <parameter name="url1" value="https://test-wmos1.test.liquidation.com:10501/RFLogin/ui/rflogin.jsp"/>
+    <parameter name="webSite" value="https://test-wmos1.test.liquidation.com:10501/"/>
+    <parameter name="browser" value="*chrome"/>
+    <parameter name="seleniumPort" value="5555"/>
+    <classes>
+      <class name="testcases.inboundflow">
+        <methods>
+          <include name="homepage"/>
+          <include name="loginpage"/>
+          <include name="itemcreation"/>
+          <include name="rfmenulogin"/>
+          <include name="WMSlogin"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
